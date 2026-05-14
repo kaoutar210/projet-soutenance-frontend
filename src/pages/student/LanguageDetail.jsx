@@ -331,7 +331,7 @@ const LanguageDetail = () => {
             >
               {course.file_path ? (
                 <iframe
-                  src={`http://localhost:8000/storage/${course.file_path}#toolbar=0`}
+                  src={`${course.file_path}#toolbar=0`}                  
                   style={{ width: "100%", height: "100%", minHeight: 1100, display: "block", border: "none" }}
                   title={course.title}
                 />
