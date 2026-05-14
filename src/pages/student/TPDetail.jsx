@@ -341,7 +341,7 @@ const TPDetail = () => {
             >
               {tp.file_path ? (
                 <iframe
-                  src={`http://localhost:8000/storage/${tp.file_path}#toolbar=0`}
+                  src={`${tp.file_path}#toolbar=0`}
                   style={{ width: "100%", height: "100%", minHeight: 1100, display: "block", border: "none" }}
                   title={tp.title}
                 />
