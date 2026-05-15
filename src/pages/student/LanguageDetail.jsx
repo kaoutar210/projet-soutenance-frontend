@@ -330,11 +330,27 @@ const LanguageDetail = () => {
               }}
             >
               {course.file_path ? (
-                <iframe
-                  src={`https://projet-soutenance-backend-production.up.railway.app/api/pdf/course/${course.id}`}
-                  style={{ width: "100%", height: "100%", minHeight: 1100, display: "block", border: "none" }}
-                  title={course.title}
-                />
+                 <div style={{display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', height:'100%', minHeight:1100, gap:16}}>
+    <p style={{fontFamily:'DM Sans', color:'var(--muted)', fontSize:14}}>
+      Cliquez pour ouvrir le cours
+    </p>
+    <a 
+      href={course.file_path} 
+      target="_blank" 
+      rel="noreferrer"
+      style={{
+        padding:'16px 32px',
+        background:'var(--blue)',
+        color:'white',
+        borderRadius:'12px',
+        fontWeight:600,
+        textDecoration:'none',
+        fontSize:'15px'
+      }}
+    >
+      📄 Ouvrir le PDF
+    </a>
+  </div>
               ) : (
                 <div className="ld-fallback">
                   <span className="ld-module-pill">
