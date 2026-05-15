@@ -340,9 +340,9 @@ const TPDetail = () => {
               }}
             >
               {tp.file_path ? (
-                 <div style={{display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', height:'100%', minHeight:1100, gap:16}}>
+  <div style={{display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', height:'100%', minHeight:1100, gap:16}}>
     <p style={{fontFamily:'DM Sans', color:'var(--muted)', fontSize:14}}>
-      Cliquez pour ouvrir le cours
+      Cliquez pour ouvrir le TP
     </p>
     <a 
       href={tp.file_path} 
@@ -350,7 +350,7 @@ const TPDetail = () => {
       rel="noreferrer"
       style={{
         padding:'16px 32px',
-        background:'var(--blue)',
+        background:'var(--orange)',
         color:'white',
         borderRadius:'12px',
         fontWeight:600,
@@ -358,7 +358,7 @@ const TPDetail = () => {
         fontSize:'15px'
       }}
     >
-      📄 Ouvrir le PDF
+      📄 Ouvrir le TP
     </a>
   </div>
               ) : (
