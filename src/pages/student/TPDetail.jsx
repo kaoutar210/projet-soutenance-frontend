@@ -341,7 +341,7 @@ const TPDetail = () => {
             >
               {tp.file_path ? (
                 <iframe
-                  src={`https://docs.google.com/viewer?url=${encodeURIComponent(tp.file_path)}&embedded=true`}
+                  src={`https://projet-soutenance-backend-production.up.railway.app/api/pdf/tp/${tp.id}`}
                   style={{ width: "100%", height: "100%", minHeight: 1100, display: "block", border: "none" }}
                   title={tp.title}
                 />

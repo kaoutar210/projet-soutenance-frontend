@@ -331,7 +331,7 @@ const LanguageDetail = () => {
             >
               {course.file_path ? (
                 <iframe
-                  src={`https://docs.google.com/viewer?url=${encodeURIComponent(course.file_path)}&embedded=true`}
+                  src={`https://projet-soutenance-backend-production.up.railway.app/api/pdf/course/${course.id}`}
                   style={{ width: "100%", height: "100%", minHeight: 1100, display: "block", border: "none" }}
                   title={course.title}
                 />
