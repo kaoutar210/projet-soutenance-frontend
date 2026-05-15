@@ -52,7 +52,7 @@ export const tpService = {
 
   // GET ONE TP
 getOneTP: async (id) => {
-  const response = await API.get(`/admin/tp/${id}`);
+  const response = await API.get(`/student/tp/${id}`);
   return response.data;
 },
 
