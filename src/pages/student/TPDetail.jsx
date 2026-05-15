@@ -341,7 +341,7 @@ const TPDetail = () => {
             >
               {tp.file_path ? (
                 <iframe
-                  src={`${tp.file_path.replace('/image/upload/', '/raw/upload/')}#toolbar=0`}
+                  src={`https://docs.google.com/viewer?url=${encodeURIComponent(tp.file_path)}&embedded=true`}
                   style={{ width: "100%", height: "100%", minHeight: 1100, display: "block", border: "none" }}
                   title={tp.title}
                 />
